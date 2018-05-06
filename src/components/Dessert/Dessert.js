@@ -1,5 +1,16 @@
 import React from 'react';
+import classes from './Dessert.css';
+import DessertIngredient from './DessertIngredient/DessertIngredient';
 
-const burger = (props) => {
-  return ();
+const dessert = (props) => {
+  return (
+    <div className={classes.Dessert}>
+      <DessertIngredient type="bread-top" />
+      <DessertIngredient type="cheese" />
+      <DessertIngredient type="meat" />
+      <DessertIngredient type="bread-bottom" />
+    </div>
+  );
 };
+
+export default dessert;
