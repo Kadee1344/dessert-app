@@ -1,0 +1,37 @@
+$startBottomPosition: 168px;
+
+.IceCreamBall {
+  background-repeat: no-repeat;
+  background-size: 220px 220px;
+  height: 220px;
+  position: absolute;
+  margin: 0 auto;
+  width: 220px;
+
+  &--vanilla {
+    background-image: url("../../../assets/images/vanilla.png");
+  }
+
+  &--pistachio {
+    background-image: url("../../../assets/images/pistachio.png");
+  }
+
+  &--chocolate {
+    background-image: url("../../../assets/images/chocolate.png");
+  }
+
+  &:nth-child(1) {
+    bottom: 168px;
+    left: -7px;
+  }
+
+  &:nth-child(2) {
+    bottom: 310px;
+    left: -18px;
+  }
+
+  &:nth-child(3) {
+    bottom: 462px;
+    left: -24px;
+  }
+}

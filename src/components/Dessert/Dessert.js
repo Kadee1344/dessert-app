@@ -1,14 +1,15 @@
 import React from 'react';
-//import classes from './Dessert.css';
+import classes from './Dessert.css';
 import DessertIngredient from './DessertIngredient/DessertIngredient';
 
 const dessert = (props) => {
   return (
-    <div className='test'>
-      <DessertIngredient type="bread-top" />
-      <DessertIngredient type="cheese" />
-      <DessertIngredient type="meat" />
-      <DessertIngredient type="bread-bottom" />
+    <div className={classes.HornContainer}>
+      <div className={classes.Horn}>
+        <DessertIngredient type='vanilla-ball' />
+        <DessertIngredient type='pistachio-ball' />
+        <DessertIngredient type='chocolate-ball' />      
+      </div>
     </div>
   );
 };

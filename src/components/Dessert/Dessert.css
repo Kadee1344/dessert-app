@@ -1,0 +1,17 @@
+.HornContainer {
+  height: 720px;
+  margin: 0 auto;
+  position: relative;
+  width: 200px;
+}
+
+.Horn {
+  background-image: url("../../assets/images/horn.png");
+  background-repeat: no-repeat;
+  background-size: 200px;
+  background-position: 0 161px;
+  bottom: 0;
+  height: 378px;
+  position: absolute;
+  width: 200px;
+}
