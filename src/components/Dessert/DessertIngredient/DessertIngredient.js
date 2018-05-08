@@ -7,14 +7,17 @@ class DessertIngredient extends Component {
   render () {
     let ingredient = null;
     switch (this.props.type) {
-      case ('vanilla-ball'):
+      case ('vanilla'):
         ingredient = <div className="IceCreamBall IceCreamBall--vanilla"></div>;
         break;
-      case ('chocolate-ball'):
+      case ('chocolate'):
         ingredient = <div className="IceCreamBall IceCreamBall--chocolate"></div>;
         break;
-      case ('pistachio-ball'):
+      case ('pistachio'):
         ingredient = <div className="IceCreamBall IceCreamBall--pistachio"></div>;
+        break;
+      case ('horn'):
+        ingredient = <div className="Horn"></div>;
         break;
       default:
         ingredient = null;

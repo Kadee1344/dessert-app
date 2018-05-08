@@ -3,10 +3,10 @@ $startBottomPosition: 168px;
 .IceCreamBall {
   background-repeat: no-repeat;
   background-size: 220px 220px;
-  height: 220px;
-  position: absolute;
-  margin: 0 auto;
+  height: 214px;
+  // position: absolute;
   width: 220px;
+  animation: bottom 2s 2s;
 
   &--vanilla {
     background-image: url("../../../assets/images/vanilla.png");
@@ -20,18 +20,27 @@ $startBottomPosition: 168px;
     background-image: url("../../../assets/images/chocolate.png");
   }
 
-  &:nth-child(1) {
-    bottom: 168px;
-    left: -7px;
+  $elements: 15;
+  @for $i from 2 to $elements {
+    &:nth-child(#{$i + 1}) {
+      bottom: calc(162px * #{$i});
+      left: -7px;
+    }
   }
 
   &:nth-child(2) {
-    bottom: 310px;
-    left: -18px;
+    bottom: 168px;
+    left: -7px;
   }
+}
 
-  &:nth-child(3) {
-    bottom: 462px;
-    left: -24px;
-  }
+.Horn {
+  background-image: url("../../../assets/images/horn.png");
+  background-repeat: no-repeat;
+  background-size: 200px;
+  bottom: 0;
+  height: 220px;
+  margin: 0 auto;
+  // position: absolute;
+  width: 200px;
 }

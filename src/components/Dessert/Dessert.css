@@ -1,17 +1,14 @@
 .HornContainer {
-  height: 720px;
+  max-height: 720px;
   margin: 0 auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   position: relative;
-  width: 200px;
+  width: 250px;
 }
 
-.Horn {
-  background-image: url("../../assets/images/horn.png");
-  background-repeat: no-repeat;
-  background-size: 200px;
-  background-position: 0 161px;
-  bottom: 0;
-  height: 378px;
-  position: absolute;
-  width: 200px;
+.AddIceCreamTitle {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
 }
